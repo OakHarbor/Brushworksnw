@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html id="noScroll">
+<head>
+    <link rel="stylesheet" href="about.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Brushworks NW Inc.</title>
+</head>
+<body>
+
+    <!-- --------------------------------------------- -->
+    <!--            NAVIGATION                         -->
+    <!-- --------------------------------------------- -->
+
+    <nav class="navbar grid animated fadeIn ">
+        <div class="open-slide">
+            <div>
+                <a href="#" onclick="toggleNav()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 35,5" stroke="#000" stroke-width="2"/>
+                        <path d="M0,14 35,14" stroke="#000" stroke-width="2"/>
+                        <path d="M0,23 35,23" stroke="#000" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <img class="mobile-logo container" src="images/brushworks_logo.png" width="100px" height="100px">
+        <div class="container">
+            <ul class="navbar-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="active" href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li id="number">(360) 679-4444</li>
+            </ul>
+        </div>
+    </nav>
+    <div id="side-hidden-parent">
+        <div id="side-hidden"></div>
+    </div>
+    <div id="side-menu" class="side-nav">
+        <ul id="on-top">
+            <li><a href="#" id="btn-close" class="btn-close" onclick="closeSideMenu()">&times;</a></li>
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a class="side-active" href="html/about.html">About</a></li>
+            <li class="nav-item"><a href="services.html">Services</a></li>
+            <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- -------------------------------------------- -->
+    <!--                   HERO                       -->
+    <!-- -------------------------------------------- -->
+    
+    <div id="bottom-menu">
+        <div class="bottom">
+            <a href="tel:+1-(360)-679-4444"><i class="fas fa-phone fa-2x"></i></a>
+        </div>
+        <div class="bottom2">
+            <a href="mailto:bwnwinc@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+        </div>
+    </div>
+
+    <main>
+        <section id="about-header">
+            <div id="dark"></div>
+            <h1 id="about-h1">About Us</h1>
+        </section>
+
+        <section id="about-content">
+            <div class="about-body container">
+                <h2 id="meet">Meet Jon and James</h2>
+                <div class="about-line"></div>
+                <p id="about-p">
+                    Between Jon and James, they have 30 plus years of experience in the painting business, and 11 of those years as owners.<br><br>
+
+                    They both started as general painters but both had desires for opportunity.  Together they formed Brushworks NW Inc and have consistently worked hard to maintain their standards, premier painting, top tier quality products, knowledge, and growth.<br><br>
+
+                    You can see their work all around town.  From businesses to homes, they have left their mark on Whidbey Island and will continue to exceed expectations, making every stroke of their brush a stroke of genius.<br><br>
+                </p>
+            </div>
+        </section>
+
+        <section id="bottom">
+            <div class="line"></div>
+            <div>
+                <img class="logo-bottom" src="images/brushworks_logo.png" width="200px" height="200px">
+            </div>
+            <div class="line"></div>
+        </section>
+
+    </main>
+    <!-- -------------------------------------------- -->
+    <!--               FOOTER                         -->
+    <!-- -------------------------------------------- -->
+    <footer class="grid">
+        <div class="footer container">
+            <div class="footer-item">
+                <h3>OVER 30 YEARS EXPERIENCE</h3>
+                <p>We provide many painting services to our customers.  All of our work is performed by our highly qualified staff and backed by our 100% customer satisfaction guarantee. </p>
+            </div>
+            <div class="footer-item">
+                <div class="list">
+                    <ul>
+                        <li><h3 class="adjust">OUR SERVICES</h3>
+                        <li>Deck Work</li>
+                        <li>Pressure Washing</li>
+                        <li>Staining</li>
+                        <li>Doors and Cabinets</li>
+                        <li>Mill Work Specialists</li>
+                        <li>Interior/Exterior Painting</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3 class="adjust-add">ADDRESS</h3>
+                <p class="regular">Brushworks NW <br>
+                                   691 Oak St. Unit I <br>
+                                   Oak Harbor, WA 98277
+                </p><br>
+                <p class="margin-p">Phone: (360) 679-4444 <br>
+                   Fax: (360) 679-5026 <br>
+                   Email: bwnwinc@gmail.com</p>
+            </div>
+        </div>
+        <div class="facebook container">
+            <a href="https://www.facebook.com/brushworksnwinc/"><i class="fab fa-facebook-square fa-2x"></i></a>
+        </div>
+        <div class="copyright">
+            <p class="copy-center">© 2019 Brushworks Inc. NW<br>
+            Designed By <a id="company" href="">Oak Harbor Web Designs</a></p>
+        </div>
+    </footer>
+
+    <script src="mobile-nav.js"></script>
+    
+</body>
+</html>

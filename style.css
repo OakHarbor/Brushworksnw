@@ -1,0 +1,1154 @@
+.container {
+	padding: 0 3.5em;
+}
+
+main {
+	position: relative;
+	top: -20%;
+}
+
+body, html {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	overflow-x: hidden;
+	/*background: #CE2026;*/
+}
+
+#noScroll {
+	overflow: scroll;
+}
+
+/*-- ---------------------------------------------------------------- -->
+<!--                        NAVIGATION                                -->
+<!-- --------------------------------------------------------------- --*/
+
+.navbar {
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 78px;
+	border-bottom: 8px solid #CE2026;
+	position: relative;
+	z-index: 1;
+}
+
+.navbar-links {
+	display: none;
+}
+
+#logo {
+	display: none;
+}
+
+.open-slide {
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    display: block;
+    z-index: 4;
+    position: absolute;
+    right: 0;
+}
+
+.side-nav {
+    width: 0;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    transition: 0.5s;
+    right: -1px;
+    text-align: right;
+    z-index: 15;
+}
+
+#side-hidden {
+    background-color: #000;
+    opacity: 0.9;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    left: 0
+    margin: 0;
+    width: 0;
+    z-index: 6;
+}
+
+.side-nav ul {
+    display: block;
+    text-decoration: none;
+    z-index: 6;
+    /* Added this */
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+
+/* Added this */
+.nav-item {
+    display:block;
+    margin: 0;
+}
+
+.side-nav ul a {
+    position: relative;
+    width: 100%;
+    /* Changed this */
+    /* padding: 10px 130px 10px 100px;*/
+    padding: 20px 15px;
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    z-index: 6;
+    /* Removed this */
+    /* right: 30px; */
+    text-align: right;
+    /* Added these */
+    display: block;
+    box-sizing: border-box;  
+}
+
+.btn-close {
+	display: block;
+	background: #fff;
+    position: absolute;
+    top: 0;
+    /* Changed this */
+    /* left: 22px; */
+    left: 0;
+    font-size: 36px;
+	text-decoration: none;
+	color: #2F2E2E;
+	right: 7px;
+    padding: 0;
+}
+
+.btn-close a:hover {
+	color: #444;
+	cursor: pointer;
+	background: #fff;
+}
+
+.side-nav .btn-close:hover {
+	color: #fff
+}
+
+.side-nav li a:hover {
+    color: #fff;
+    background: #CE2026;
+}
+
+.side-active {
+	color: #ffffff !important;
+	background: #CE2026;
+}
+
+.mobile-logo {
+	position: relative;
+	top: 10%;
+	right: 0%;
+	padding: 0;
+}
+
+#side-menu {
+    margin: 0;
+    width: 0;
+    transition: .5s;
+}
+
+#side-menu ul {
+    position: relative;
+    top: -10px;
+}
+
+#on-top {
+	display: none;
+}
+
+#bottom-menu {
+	display: flex;
+	flex-direction: row;
+	z-index: 7;
+	flex-wrap: nowrap;
+	width: 100%;
+	position: absolute;
+}
+
+.bottom {
+    width: 50%;
+    background: white;
+    bottom: 0;
+    position: fixed;
+    height: 85px;
+    display: block;
+    left: 0;
+    border-top: 1px solid #a9a9a9;
+    border-right: 1px solid #a9a9a9;
+}
+
+.bottom2 {
+    width: 50%;
+    background: white;
+    bottom: 0;
+    position: fixed;
+    height: 85px;
+    display: block;
+    position: fixed;
+    right: 0;
+    border-top: 1px solid #a9a9a9;
+    border-left: 1px solid #a9a9a9;
+}
+
+#bottom-menu i {
+	padding-top: px;
+	color: #2F2E2E;
+	text-align: center;
+	position: relative;
+	/* center icon vertically */
+	top: calc(50% - 15px);
+}
+
+.copyright {
+	height: 180px;
+}
+
+.copy-center {
+	padding: 0;
+}
+
+#company {
+	color: #fff;
+	text-decoration: none;
+}
+
+#company a:hover {
+	color: #b0b0b0;
+}
+
+/*-- -------------------------------------------- -->
+<!--              HERO STRIP                      -->
+<!-- -------------------------------------------- -*/
+
+#hero {
+	height: 100%;
+	width: 100%;
+	background:url("images/Landing.jpg");
+    background-attachment: fixed;
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+	color: #fff;
+}
+
+#home-h {
+	width: 100%;
+	font-weight: 900;
+	font-size: 2.1em;
+	padding-top: 1em;
+	line-height: 1.2em;
+	margin-top: 0;
+}
+
+#home-p {
+	font-size: 1.25em;
+	padding-bottom: .8em;
+	font-weight: 350;
+	animation-delay: 0.3s;
+	margin: 0;
+}
+
+.learn {
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #FFFFFF;
+	font-size: 17px;
+	margin: 28px 0;
+	padding: 18px 80px;
+	color: #FFFFFF;
+	text-decoration: none;
+	animation-delay: 0.6s;
+}
+
+.heroText a:hover {
+	background: #fff;
+	border-color: #fff;
+	color: #CE2026;
+	transition: background 0.4s ease 0s;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+
+/*-- -------------------------------------------- -->
+<!--              RED STRIP                       -->
+<!-- -------------------------------------------- -*/
+
+#red-strip {
+	background: #CE2026;
+	color: #fff;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 0em;
+}
+
+#strip-1 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#strip-1 h3 {
+	font-size: 1.313em;
+}
+
+#strip-1 p {
+	line-height: 1.4em;
+}
+
+.top h3 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.strip-1-center {
+	padding: 1.8em;
+}
+
+.strip-1-center h3 {
+	padding-top: 1em;
+}
+
+/*-- -------------------------------------------- -->
+<!--              GIVE CALL                       -->
+<!-- -------------------------------------------- -*/
+
+.email-us {
+	display: none;
+}
+
+#give-call {
+	margin-top: 1em;
+	padding: 0;
+	background: #fff;
+	height: 100%;
+}
+
+.gcn-call, .gcn-number {
+	font-size: 1.375em;
+}
+
+.gcn-call {
+	margin-bottom: 0;
+	padding-top: 3em;
+}
+
+.gcn-number {
+	margin-top: .4em;
+}
+
+.gcn-p {
+	line-height: 1.5em;
+	margin-bottom: 3em;
+}
+
+.give-call-number {
+	margin-bottom: 5em;
+}
+
+.give-call-number a {
+	border: 2px solid #000;
+	border-radius: 25px;
+	position: relative;
+	padding: 15px 25%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-decoration: none;
+	color:#2F2E2E;
+}
+
+.give-call-number a:hover {
+	background: #CE2026;
+	color: #fff;
+	border-color: #CE2026;
+}
+
+.give-call-email {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 3em;
+}
+
+#give-call img {
+	width: auto;
+}
+
+/*-- -------------------------------------------- -->
+<!--                  ICONS                       -->
+<!-- -------------------------------------------- -*/
+
+#icons {
+	background: #EEF0E4;
+	color: #2F2E2E;
+	height: 100%;
+}
+
+#icons i {
+	color: #CE2026;
+}
+
+.top-margin {
+	margin-top: 0;
+	padding-top: 3em;
+	font-size: 1.375em;
+}
+
+.margin-bottom {
+	margin-bottom: 3.5em;
+}
+
+#icons p {
+	line-height: 1.5em;
+}
+
+/*-- -------------------------------------------- -->
+<!--                PARALLAX                      -->
+<!-- -------------------------------------------- -*/
+
+#parallax {
+	color: #fff;
+	height: 100%;
+	padding-bottom: 3em;
+	background: #CE2026;
+}
+
+.parallax-right {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.parallax-right h3 {
+	font-size: 2.375em;
+	margin: 0;
+}
+
+.parallax-p {
+	line-height: 1.5em;
+	margin-bottom: 2em;
+}
+
+.parallax-p a {
+	text-decoration: none;
+	border: 2px solid #fff;
+	padding: 1em 25%;
+	color: #fff;
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+.parallax a:hover {
+	cursor: pointer;
+	background: white;
+	color: #CE2026;
+}
+
+/*-- -------------------------------------------- -->
+<!--               CONTACT                        -->
+<!-- -------------------------------------------- -*/
+
+#contact-info {
+	text-align: left;
+	background: white;
+	color: #605E5E;
+	font-weight: 300;
+	padding-top: 3em;
+	height: 100%;
+	padding-bottom: 3.6em;
+}
+
+#adress p {
+	margin-bottom: 0; 
+	margin-top: 0;
+}
+
+.red {
+	color: #ce2026;
+	font-weight: 400;
+}
+
+.form h6 {
+	font-size: 1.375em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.form {
+	width: 100%;
+	margin: .3em;
+}
+
+input, textarea {
+	margin: .4em;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	white-space: pre;
+}
+
+input[type=submit] {
+	background: #CE2026;
+	color: #fff;
+	font-size: 14px;
+	float: right;
+	padding: 7px 13px;
+	margin-right: 0;
+	border: none;
+}
+
+input[type=submit]:hover {
+	background: #831517;
+	cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #605E5E;
+  opacity: .5;
+  padding-left: 5px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #605E5E;
+  opacity: .5;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #605E5E;
+  opacity: .5;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: red;
+  opacity: .5;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+/*-- -------------------------------------------- -->
+<!--                FOOTER                        -->
+<!-- -------------------------------------------- -*/
+
+
+footer {
+	color: #A0A09F;
+	background: #2F2E2E;
+}
+
+footer h3 {
+	font-size: 1em;
+}
+
+footer p {
+	font-size: .875em;
+	line-height: 1.5em;
+}
+
+footer li {
+	font-size: .875em;
+	line-height: 1.5em;
+}
+
+footer ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+.footer-item {
+	padding-top: 2em;
+}
+
+.margin-p {
+	margin-bottom: 0;
+}
+
+.facebook {
+	padding: 2em 0;
+}
+
+.facebook i {
+	color: #3b5998;
+}
+
+.copyright {
+	background: #242323;
+	color: #A0A09F;
+}
+
+.copy-center {
+	padding: 2em 0;
+	margin: 0;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 600px) {
+
+	#bottom-menu {
+		display: none;
+	}
+
+	/** red strip**/
+
+	#hero {
+		height: 450px;
+	}
+
+
+	#home-h {
+		margin-bottom: 8px;
+		
+	}
+
+	.heroText {
+		text-align: left;
+		padding-top: 100px;
+		width: 500px;
+	}
+
+	.learn {
+		margin-top: 8px;
+		padding: 10px 60px 10px 60px;
+	}
+
+	#strip-1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0;
+	}
+
+	.line {
+		display: flex;
+		align-items: center;
+		margin: 20px;
+		border-right: 1px solid #FFFFFF;
+		height: 60px;
+	}
+
+	.top {
+		margin-top: 21px;
+
+	}
+
+	.flex-1 p {
+		font-size: .8em;
+	}
+
+	/** Icons**/
+
+	.center-3 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.center-3 p {
+		font-size: .8em;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+
+	/** parallax **/
+
+	#parallax {
+		padding: 0;
+		height: 360px;
+	}
+
+	.para-flex {
+		display: flex;
+		flex-direction: row;
+		flex-basis: 50%;
+	}
+
+	.parallax-left {
+		background-image: url("images/paint-shop.jpg");
+		height: 360px;
+		width: 50%;
+		flex-basis: 50%;
+		background-attachment: fixed;
+	  	background-position: center;
+	  	background-repeat: no-repeat;
+	  	background-size: cover;
+	}
+
+	.parallax-right {
+		width: 50%;
+		height: 100%;
+		flex-basis: 50%;
+		text-align: left;
+	}
+
+	.read {
+		padding: 10px 50px !important;
+		margin-bottom: 20px;
+	}
+
+/** address **/
+
+	#adress {
+		width: 30%;
+		margin-right: 10px;
+		padding: 0;
+	}
+
+	.form {
+		width: 60%;
+	}
+
+	.flex-address {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	/** footer **/
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.footer p {
+		font-size: .8em;
+		text-align: left;
+	}
+
+	.footer h3 {
+		text-align: left;
+	}
+
+	.list ul {
+		text-align: left;
+	}
+
+	.footer-item {
+		width: 25%;
+	}
+
+	.copyright {
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 1101px) {
+
+	.container {
+		max-width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+/*-- ---------------------------------------------------------------- -->
+<!--                        NAVIGATION                                -->
+<!-- --------------------------------------------------------------- --*/
+
+	#bottom-menu {
+		display: none;
+	}
+
+	#side-menu {
+		display: none;
+	}
+
+	.open-slide {
+		display: none;
+	}
+
+	.mobile-logo {
+		display: none;
+	}
+
+	.navbar {
+		height: 100px;
+	}
+
+	.navbar-links {
+		display: block;
+		max-width: 1090px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		bottom: 15px;
+		float: left;
+	}
+
+	.navbar-links a:hover {
+		background: #831517;
+		color: #FFFFFF;
+		transition: background 0.4s ease 0s;
+	    transition-property: background;
+	    transition-duration: 0.4s;
+	    transition-timing-function: ease;
+	    transition-delay: 0s;
+	 }
+
+	.navbar-links a {
+		display: inline;
+		color: #444444;
+		text-decoration: none;
+		text-align: center;
+		margin: 0 5px 0 0;
+		font-size: 15px;
+		padding: 10px 17px;
+	}
+
+	nav .active {
+	 	background: #CE2026;
+		color: #FFFFFF;
+	 }
+
+	.navbar ul {
+		margin: 0 auto;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+		width: 100%;
+		height: 100px;
+	}
+
+
+	ul li {
+		list-style: none;
+		display: inline-block;
+		margin-top: 50px;
+		font-size: 1.4em;
+		float: left;
+	}
+
+
+	#number {
+		float: right;
+		padding-right: 0;
+		margin-top: 50px;
+		font-size: 21px;
+		font-weight: normal;
+	}
+
+
+/*-- -------------------------------------------- -->
+<!--              HERO STRIP                      -->
+<!-- -------------------------------------------- -*/
+
+	#logo {
+		display: block;
+		height: 291px;
+		width: 296px;
+		float: left;
+		position: relative;
+		top: 125px;
+		margin-right: 25px;
+		margin-bottom: 100px;
+		padding: 0;
+		animation-delay: 0.8s;
+	}
+
+	#hero {
+		height: 550px;
+	}
+
+	.heroText {
+		text-align: left;
+		padding-top: 100px;
+	}
+
+	#home-h {
+		font-weight: 900;
+		font-size: 53px;
+		margin-bottom: 15px;
+	}
+
+	#home-p {
+		font-size: 21px;
+		font-weight: normal;
+		animation-delay: 0.3s;
+	}
+
+	.learn {
+		font-size: 17px;
+		margin-top: 10px;
+		padding: 15px 55px;
+	}
+
+/*-- -------------------------------------------- -->
+<!--               RED STRIP                      -->
+<!-- -------------------------------------------- -*/
+
+	#red-strip {
+		height: 250px;
+	}
+
+	#strip-1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		padding: 20px;
+	}
+
+	.line {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 20px;
+		border-right: 1px solid #FFFFFF;
+		height: 60px;
+	}
+
+	.top {
+		margin-top: 21px;
+
+	}
+
+	#strip-1 h3 {
+		font-size: 1.313em;
+	}
+
+	.flex-1 p {
+		font-size: 1em;
+		width: 236px;
+		line-height: 1.4em;
+	}
+
+	/*-- -------------------------------------------- -->
+	<!--                EMAIL US                      -->
+	<!-- -------------------------------------------- -*/
+
+	.email-us {
+		display: block;
+		width: 312px;
+		position: relative;
+	}
+
+	.email-us {
+		position: relative;
+		width: 312px;
+	}
+
+	.image {
+		position: relative;
+		width: 312px;
+		height: 166px;
+	}
+
+	.strip-2 {
+		width: 980px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.give-call-number {
+		width: 446px;
+		margin-right: 110px;
+	}
+
+	.gcn-call {
+		padding-top: 0;
+	}
+
+	#give-call {
+		height: 475px;
+		background: #FFFFFF;
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.email {
+		background: #CE2026;
+		padding: 15px 0;
+		margin: 0;
+		font-size: 20px;
+		color: #fff;
+		font-weight: normal;
+	}
+
+	.email:hover {
+		background: #831517;
+		cursor: pointer;
+	}
+
+	/*-- -------------------------------------------- -->
+	<!--                   ICONS                      -->
+	<!-- -------------------------------------------- -*/
+
+	#icons {
+		height: 650px;
+	}
+
+	.center-3 {
+		display: flex;
+		flex-direction: row;
+		width: 980px;
+		height: 188px;
+		justify-content: space-around;
+		align-items: center;
+		animation-delay: 0.5s;
+		margin-top: 150px;
+	}
+
+	#horizontal-line {
+		border-bottom: 3px solid #2F2E2E;
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.top-margin {
+		padding-top: 100px;
+		margin-bottom: 24px;
+	}
+
+	.center-3 h2 {
+		font-size: 1.5em;
+		color: #2f2e2e;
+		font-weight: 1200;
+		margin: 35px;
+	}
+
+	.center-3 p {
+		margin: 30px;
+		font-weight: 300;
+		font-size: 1em;
+		line-height: 1.4em;
+	}
+
+	/*-- -------------------------------------------- -->
+	<!--                PARALLAX                      -->
+	<!-- -------------------------------------------- -*/
+
+	#parallax {
+		padding: 0;
+		margin: 0;
+	}
+
+	.para-flex {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.parallax-left {
+		background-image: url("images/paint-shop.jpg");
+		background-attachment: fixed;
+	  	background-position: center;
+	  	background-repeat: no-repeat;
+	  	background-size: cover;
+	  	height: 700px;
+	  	width: 50%;
+	}
+
+	.parallax-right {
+		text-align: left;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 50px;
+	}
+
+	.parallax-right h3 {
+		font-size: 70px;
+		font-weight: 700;
+		margin: 0;
+		margin-top: 10px;
+		width: 400px;
+		margin-bottom: 10px;
+	}
+
+	.parallax-p {
+		width: 283px;
+		font-size: 1.2em;
+	}
+
+	.read a {
+		border-style: solid;
+		border-width: 1px;
+		font-size: 15px;
+		padding: 5px 20px;
+		animation-delay: 0.6s;
+		margin-top: 20px;
+	}
+
+	/*-- -------------------------------------------- -->
+	<!--                PARALLAX                      -->
+	<!-- -------------------------------------------- -*/
+
+	.flex-address {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.form-contact {
+		width: 575px;
+		float: right;
+		padding: 5px;
+		margin: 5px;
+	}
+
+	.form {
+		margin: 5px;
+		padding: 5;
+	}
+
+	.form h6 {
+		font-size: 28px;
+		text-align: center;
+		margin-left: 200px;
+	}
+
+	/*-- -------------------------------------------- -->
+	<!--                   FOOTER                     -->
+	<!-- -------------------------------------------- -*/
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.list ul li {
+		font-size: 14px;
+		line-height: 1.7em;
+		margin: 0;
+		margin-right: 20px;
+	}
+
+	.footer-item {
+		width: 200px;
+		text-align: left;
+		line-height: 1.7em;
+	}
+
+	.adjust {
+		margin-right: 50px;
+	}
+
+	.adjust-add {
+		margin-top: 25px;
+	}
+
+	.copyright {
+		height: auto;
+	}
+
+}

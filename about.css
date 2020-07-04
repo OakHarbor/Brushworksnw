@@ -1,0 +1,654 @@
+.container {
+	padding: 0 3.5em;
+}
+
+main {
+	position: relative;
+	top: -20%;
+}
+
+body, html {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	overflow-x: hidden;
+	/*background: #CE2026;*/
+}
+
+#noScroll {
+	overflow: scroll;
+}
+
+/*-- ---------------------------------------------------------------- -->
+<!--                        NAVIGATION                                -->
+<!-- --------------------------------------------------------------- --*/
+
+.navbar {
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 78px;
+	border-bottom: 8px solid #CE2026;
+	position: relative;
+	z-index: 1;
+}
+
+.navbar-links {
+	display: none;
+}
+
+#logo {
+	display: none;
+}
+
+.open-slide {
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    display: block;
+    z-index: 4;
+    position: absolute;
+    right: 0;
+}
+
+.side-nav {
+    width: 0;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    transition: 0.5s;
+    right: -1px;
+    text-align: right;
+    z-index: 15;
+}
+
+#side-hidden {
+    background-color: #000;
+    opacity: 0.9;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    left: 0
+    margin: 0;
+    width: 0;
+    z-index: 6;
+}
+
+.side-nav ul {
+    display: block;
+    text-decoration: none;
+    z-index: 6;
+    /* Added this */
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+
+/* Added this */
+.nav-item {
+    display:block;
+    margin: 0;
+}
+
+.side-nav ul a {
+    position: relative;
+    width: 100%;
+    /* Changed this */
+    /* padding: 10px 130px 10px 100px;*/
+    padding: 20px 15px;
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    z-index: 6;
+    /* Removed this */
+    /* right: 30px; */
+    text-align: right;
+    /* Added these */
+    display: block;
+    box-sizing: border-box;  
+}
+
+.btn-close {
+	display: block;
+	background: #fff;
+    position: absolute;
+    top: 0;
+    /* Changed this */
+    /* left: 22px; */
+    left: 0;
+    font-size: 36px;
+	text-decoration: none;
+	color: #2F2E2E;
+	right: 7px;
+    padding: 0;
+}
+
+.btn-close a:hover {
+	color: #444;
+	cursor: pointer;
+	background: #fff;
+}
+
+.side-nav .btn-close:hover {
+	color: #fff
+}
+
+.side-nav li a:hover {
+    color: #fff;
+    background: #CE2026;
+}
+
+.side-active {
+	color: #ffffff !important;
+	background: #CE2026;
+}
+
+.mobile-logo {
+	position: relative;
+	top: 10%;
+	right: 0%;
+	padding: 0;
+}
+
+#side-menu {
+    margin: 0;
+    width: 0;
+    transition: .5s;
+}
+
+#side-menu ul {
+    position: relative;
+    top: -10px;
+}
+
+#on-top {
+	display: none;
+}
+
+#bottom-menu {
+	display: flex;
+	flex-direction: row;
+	z-index: 7;
+	flex-wrap: nowrap;
+	width: 100%;
+	position: absolute;
+}
+
+.bottom {
+    width: 50%;
+    background: white;
+    bottom: 0;
+    position: fixed;
+    height: 85px;
+    display: block;
+    left: 0;
+    border-top: 1px solid #a9a9a9;
+    border-right: 1px solid #a9a9a9;
+}
+
+.bottom2 {
+    width: 50%;
+    background: white;
+    bottom: 0;
+    position: fixed;
+    height: 85px;
+    display: block;
+    position: fixed;
+    right: 0;
+    border-top: 1px solid #a9a9a9;
+    border-left: 1px solid #a9a9a9;
+}
+
+#bottom-menu i {
+	padding-top: px;
+	color: #2F2E2E;
+	text-align: center;
+	position: relative;
+	/* center icon vertically */
+	top: calc(50% - 15px);
+}
+
+.copyright {
+	height: 180px;
+}
+
+.copy-center {
+	padding: 0;
+}
+
+#company {
+	color: #fff;
+	text-decoration: none;
+}
+
+#company a:hover {
+	color: #b0b0b0;
+}
+
+/*-- -------------------------------------------- -->
+<!--                   BODY                       -->
+<!-- -------------------------------------------- -*/
+
+#dark {
+		background-color: #000000;
+		opacity: .6;
+		width: 100%;
+		height: 200px;
+		position: absolute;
+	}
+
+#about-header {
+	display: flex;
+	background:url("images/about-us-header.jpg");
+	height: 200px;
+	width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-content {
+	height: auto;
+}
+
+.about-body {
+	padding-top: 40px;
+}
+
+#about-h1 {
+	display: block;
+	position: relative;
+	display: block;
+	font-size: 80px;
+	color: white;
+	margin: 0;
+	align-self: flex-end;
+	font-weight: 750;
+	bottom: -19px;
+	padding: 0;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about-line {
+	border-bottom: 5px solid #0F0F0F;
+	width: 32px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#meet {
+	font-size: 34px;
+	font-family: "Palatino Linotype";
+	margin-bottom: 16px;
+}
+
+#about-p {
+	font-family: "avenir light", sarif;
+	font-size: 21px;
+	font-weight: 200;
+	text-align: center;
+	line-height: 1.7em;
+}
+
+.logo-bottom {
+	margin-bottom: 50px;
+}
+
+/*-- -------------------------------------------- -->
+<!--                FOOTER                        -->
+<!-- -------------------------------------------- -*/
+
+
+footer {
+	color: #A0A09F;
+	background: #2F2E2E;
+}
+
+footer h3 {
+	font-size: 1em;
+}
+
+footer p {
+	font-size: .875em;
+	line-height: 1.5em;
+}
+
+footer li {
+	font-size: .875em;
+	line-height: 1.5em;
+}
+
+footer ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+.footer-item {
+	padding-top: 2em;
+}
+
+.margin-p {
+	margin-bottom: 0;
+}
+
+.facebook {
+	padding: 2em 0;
+}
+
+.facebook i {
+	color: #3b5998;
+}
+
+.copyright {
+	background: #242323;
+	color: #A0A09F;
+}
+
+.copy-center {
+	padding: 2em 0;
+	margin: 0;
+}
+
+/*-- -------------------------------------------- -->
+<!--                 TABLET                       -->
+<!-- -------------------------------------------- -*/
+
+@media screen and (max-width: 1100px) and (min-width: 600px) {
+
+	#bottom-menu {
+		display: none;
+	}
+
+	#dark {
+		background-color: #000000;
+		opacity: .6;
+		width: 100%;
+		height: 300px;
+		position: absolute;
+	}
+
+	#about-header {
+	  display: flex;
+	  background-image: url("images/brushwork-about.jpg");
+	  background-attachment: fixed;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  height: 300px;
+      width: 100%;
+	}
+
+	.about-body {
+		padding-top: 20px;
+	}
+
+	#about-h1 {
+		position: relative;
+		display: block;
+		font-size: 100px;
+		color: white;
+		margin: 0;
+		align-self: flex-end;
+		font-weight: 750;
+		bottom: -23px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#bottom {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#about-content {
+		height: 100%;
+	}
+
+	#about-p {
+		text-align: center;
+	}
+
+	.line {
+		border-top: 2px solid #242323;
+		width: 150px;
+	}
+
+	.logo-bottom {
+		margin: 50px;
+	}
+
+	.copyright {
+		height: auto;
+	}
+
+	/*-- -------------------------------------------- -->
+	<!--                FOOTER                        -->
+	<!-- -------------------------------------------- -*/
+
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		position: relative;
+	}
+
+	.footer p {
+		font-size: .8em;
+		text-align: left;
+	}
+
+	.footer h3 {
+		text-align: left;
+	}
+
+	.list ul {
+		text-align: left;
+	}
+
+	.footer-item {
+		width: 25%;
+	}
+
+}
+
+/*-- -------------------------------------------- -->
+<!--                DESKTOP                       -->
+<!-- -------------------------------------------- -*/
+
+@media screen and (min-width: 1101px) {
+
+	#bottom-menu {
+		display: none;
+	}
+
+	#side-menu {
+		display: none;
+	}
+
+	.open-slide {
+		display: none;
+	}
+
+	.mobile-logo {
+		display: none;
+	}
+
+	.navbar {
+		height: 100px;
+	}
+
+	.navbar-links {
+		display: block;
+		max-width: 1090px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		bottom: 15px;
+		float: left;
+	}
+
+	.navbar-links a:hover {
+		background: #831517;
+		color: #FFFFFF;
+		transition: background 0.4s ease 0s;
+	    transition-property: background;
+	    transition-duration: 0.4s;
+	    transition-timing-function: ease;
+	    transition-delay: 0s;
+	 }
+
+	.navbar-links a {
+		display: inline;
+		color: #444444;
+		text-decoration: none;
+		text-align: center;
+		margin: 0 5px 0 0;
+		font-size: 15px;
+		padding: 10px 17px;
+	}
+
+	nav .active {
+	 	background: #CE2026;
+		color: #FFFFFF;
+	 }
+
+	.navbar ul {
+		margin: 0 auto;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+		width: 100%;
+		height: 100px;
+	}
+
+
+	ul li {
+		list-style: none;
+		display: inline-block;
+		margin-top: 50px;
+		font-size: 1.4em;
+		float: left;
+	}
+
+
+	#number {
+		float: right;
+		padding-right: 0;
+		margin-top: 50px;
+		font-size: 21px;
+		font-weight: normal;
+	}
+
+/*-- -------------------------------------------- -->
+<!--                   BODY                       -->
+<!-- -------------------------------------------- -*/
+
+	.container {
+		max-width: 980px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#dark {
+		background-color: #000000;
+		opacity: .6;
+		width: 100%;
+		height: 350px;
+		position: absolute;
+	}
+
+	#about-header {
+		display: flex;
+		width: 100%;
+		height: 350px;
+		background-attachment: fixed;
+	 	background-repeat: no-repeat;
+	 	background-size: cover;
+	}
+
+	#about-h1 {
+		position: relative;
+		display: block;
+		font-size: 116px;
+		color: white;
+		margin: 0;
+		align-self: flex-end;
+		font-weight: 750;
+		bottom: -28px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.about-body {
+		padding-top: 30px;
+	}
+
+	#about-content {
+		height: auto;
+	}
+
+	#meet {
+		font-size: 44px;
+	}
+	
+	#about-p {
+		font-size: 21px;
+	}
+
+	#bottom {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.line {
+		border-top: 2px solid #242323;
+		width: 284px;
+	}
+
+	.logo-bottom {
+		margin: 50px;
+	}
+
+/* Footer */
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.list ul li {
+		font-size: 14px;
+		line-height: 1.7em;
+		margin: 0;
+		margin-right: 20px;
+	}
+
+	.footer-item {
+		width: 200px;
+		text-align: left;
+		line-height: 1.7em;
+	}
+
+	.adjust {
+		margin-right: 50px;
+	}
+
+	.adjust-add {
+		margin-top: 25px;
+	}
+
+	.copyright {
+		height: auto;
+	}
+
+}

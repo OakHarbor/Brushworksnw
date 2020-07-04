@@ -1,0 +1,693 @@
+.container {
+    padding: 0 3.5em;
+}
+
+main {
+    position: relative;
+    top: -20%;
+}
+
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+    /*background: #CE2026;*/
+}
+
+#noScroll {
+    overflow: scroll;
+}
+
+/*-- ---------------------------------------------------------------- -->
+<!--                        NAVIGATION                                -->
+<!-- --------------------------------------------------------------- --*/
+
+.navbar {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 78px;
+    border-bottom: 8px solid #CE2026;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-links {
+    display: none;
+}
+
+#logo {
+    display: none;
+}
+
+.open-slide {
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    display: block;
+    z-index: 4;
+    position: absolute;
+    right: 0;
+}
+
+.side-nav {
+    width: 0;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    transition: 0.5s;
+    right: -1px;
+    text-align: right;
+    z-index: 15;
+}
+
+#side-hidden {
+    background-color: #000;
+    opacity: 0.9;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    left: 0
+    margin: 0;
+    width: 0;
+    z-index: 6;
+}
+
+.side-nav ul {
+    display: block;
+    text-decoration: none;
+    z-index: 6;
+    /* Added this */
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+
+/* Added this */
+.nav-item {
+    display:block;
+    margin: 0;
+}
+
+.side-nav ul a {
+    position: relative;
+    width: 100%;
+    /* Changed this */
+    /* padding: 10px 130px 10px 100px;*/
+    padding: 20px 15px;
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    z-index: 6;
+    /* Removed this */
+    /* right: 30px; */
+    text-align: right;
+    /* Added these */
+    display: block;
+    box-sizing: border-box;  
+}
+
+.btn-close {
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    /* Changed this */
+    /* left: 22px; */
+    left: 0;
+    font-size: 36px;
+    text-decoration: none;
+    color: #2F2E2E;
+    right: 7px;
+    padding: 0;
+}
+
+.btn-close a:hover {
+    color: #444;
+    cursor: pointer;
+    background: #fff;
+}
+
+.side-nav .btn-close:hover {
+    color: #fff
+}
+
+.side-nav li a:hover {
+    color: #fff;
+    background: #CE2026;
+}
+
+.side-active {
+    color: #ffffff !important;
+    background: #CE2026;
+}
+
+.mobile-logo {
+    position: relative;
+    top: 10%;
+    right: 0%;
+    padding: 0;
+}
+
+#side-menu {
+    margin: 0;
+    width: 0;
+    transition: .5s;
+}
+
+#side-menu ul {
+    position: relative;
+    top: -10px;
+}
+
+#on-top {
+    display: none;
+}
+
+#bottom-menu {
+    display: flex;
+    flex-direction: row;
+    z-index: 7;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: absolute;
+}
+
+.bottom {
+    width: 50%;
+    background: white;
+    bottom: 0;
+    position: fixed;
+    height: 85px;
+    display: block;
+    left: 0;
+    border-top: 1px solid #a9a9a9;
+    border-right: 1px solid #a9a9a9;
+}
+
+.bottom2 {
+    width: 50%;
+    background: white;
+    bottom: 0;
+    position: fixed;
+    height: 85px;
+    display: block;
+    position: fixed;
+    right: 0;
+    border-top: 1px solid #a9a9a9;
+    border-left: 1px solid #a9a9a9;
+}
+
+#bottom-menu i {
+    padding-top: px;
+    color: #2F2E2E;
+    text-align: center;
+    position: relative;
+    /* center icon vertically */
+    top: calc(50% - 15px);
+}
+
+.copyright {
+    height: 180px;
+}
+
+.copy-center {
+    padding: 0;
+}
+
+#company {
+    color: #fff;
+    text-decoration: none;
+}
+
+#company a:hover {
+    color: #b0b0b0;
+}
+
+/*-- -------------------------------------------- -->
+<!--                 BODY                         -->
+<!-- -------------------------------------------- -*/
+
+#s-hero {
+    background:url("images/wokrer.jpg");
+    height: 450px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dark {
+    background-color: #000000;
+    opacity: .4;
+    width: 100%;
+    height: 450px;
+    position: absolute;
+}
+
+.s-header h1 {
+    font-size: 37px;
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+    margin: 0;
+    position: relative;
+    z-index: 5;
+}
+
+#s-line {
+    width: 100%;
+    border-top: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 5;
+}
+
+#s-p {
+    font-size: 1em;
+    padding-bottom: 80px;
+    line-height: 1.6em;
+    color: white;
+    position: relative;
+    z-index: 5;
+    padding-bottom: 20px;
+}
+
+.gallery-rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.image img {
+    margin: 13px;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {
+    opacity: 0.7;
+}
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  z-index: 16;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/*-- -------------------------------------------- -->
+<!--                FOOTER                        -->
+<!-- -------------------------------------------- -*/
+
+
+footer {
+    color: #A0A09F;
+    background: #2F2E2E;
+}
+
+footer h3 {
+    font-size: 1em;
+}
+
+footer p {
+    font-size: .875em;
+    line-height: 1.5em;
+}
+
+footer li {
+    font-size: .875em;
+    line-height: 1.5em;
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.footer-item {
+    padding-top: 2em;
+}
+
+.margin-p {
+    margin-bottom: 0;
+}
+
+.facebook {
+    padding: 2em 0;
+}
+
+.facebook i {
+    color: #3b5998;
+}
+
+.copyright {
+    background: #242323;
+    color: #A0A09F;
+}
+
+.copy-center {
+    padding: 2em 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 600px) {
+
+/*-- -------------------------------------------- -->
+<!--                  BODY                        -->
+<!-- -------------------------------------------- -*/
+
+    #bottom-menu {
+        display: none;
+    }
+
+    #s-hero {
+        height: 350px;
+    }
+
+    #dark {
+        height: 350px;
+        color: black;
+        opacity: .6;
+    }
+
+    #s-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .s-header h1 {
+        padding-top: 0;
+    }
+
+    #s-p {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .image img {
+        height: 280px;
+        width: 280px;
+        margin: 15px;
+    }
+
+    .gallery-rows {
+        margin-bottom: 50px;
+    }
+
+    /** footer **/
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer p {
+        font-size: .8em;
+        text-align: left;
+    }
+
+    .footer h3 {
+        text-align: left;
+    }
+
+    .list ul {
+        text-align: left;
+    }
+
+    .footer-item {
+        width: 25%;
+    }
+
+    .copyright {
+        height: 100px;
+    }
+
+}
+
+@media screen and (min-width: 1101px) {
+    
+    .container {
+        max-width: 980px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+/*-- ---------------------------------------------->
+<!--               NAVIGATION                    -->
+<!-- ---------------------------------------------*/
+
+    #bottom-menu {
+        display: none;
+    }
+
+    #side-menu {
+        display: none;
+    }
+
+    .open-slide {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar-links {
+        display: block;
+        max-width: 1090px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        bottom: 15px;
+        float: left;
+    }
+
+    .navbar-links a:hover {
+        background: #831517;
+        color: #FFFFFF;
+        transition: background 0.4s ease 0s;
+        transition-property: background;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+     }
+
+    .navbar-links a {
+        display: inline;
+        color: #444444;
+        text-decoration: none;
+        text-align: center;
+        margin: 0 5px 0 0;
+        font-size: 15px;
+        padding: 10px 17px;
+    }
+
+    nav .active {
+        background: #CE2026;
+        color: #FFFFFF;
+     }
+
+    .navbar ul {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        width: 100%;
+        height: 100px;
+    }
+
+
+    ul li {
+        list-style: none;
+        display: inline-block;
+        margin-top: 50px;
+        font-size: 1.4em;
+        float: left;
+    }
+
+
+    #number {
+        float: right;
+        padding-right: 0;
+        margin-top: 50px;
+        font-size: 21px;
+        font-weight: normal;
+    }
+
+/*-- ---------------------------------------------->
+<!--                   BODY                      -->
+<!-- ---------------------------------------------*/
+
+    .image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container {
+        max-width: 980px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #s-hero {
+        height: 425px;
+        display: flex;
+    }
+
+    #dark {
+        height: 425px;
+        color: black;
+        opacity: .6
+    }
+
+    .s-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .s-header h1 {
+        padding-top: 0;
+        font-size: 55px;
+    }
+
+    #s-p {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    .gallery-rows {
+        padding-top: 50px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .list ul li {
+        font-size: 14px;
+        line-height: 1.7em;
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    .footer-item {
+        width: 200px;
+        text-align: left;
+        line-height: 1.7em;
+    }
+
+    .adjust {
+        margin-right: 50px;
+    }
+
+    .adjust-add {
+        margin-top: 25px;
+    }
+
+    .copyright {
+        height: 100px;
+    }
+}
