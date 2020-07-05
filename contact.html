@@ -94,11 +94,12 @@
                         <h6>Call Or Email Us Today!</h6>
                     </div>
                     <div class="form-contact">
-                        <form>
+                        <form method="post" data-netlify-recaptcha="true" data-netlify="true">
                             <input class="form" type="text" name="name" placeholder="Full name" style="width: 100%; height: 30px"><br>
                             <input class="form" type="text" name="email" placeholder="Email" style="width: 100%; height: 30px"><br>
                             <textarea class="form" name="message" placeholder="Message" style="width: 99.5%; height: 100px"></textarea>
-                            <input type="submit" value="Send">
+                            <div data-netlify-recaptcha="true"></div>
+                            <input name="submit" type="submit" value="Send">
                         </form>
                     </div>
                 </div>
