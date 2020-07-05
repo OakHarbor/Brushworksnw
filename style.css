@@ -440,6 +440,7 @@ body, html {
 
 .margin-bottom {
 	padding-bottom: 3.5em;
+	margin-bottom: 0;
 }
 
 #icons p {
@@ -455,6 +456,7 @@ body, html {
 	height: 100%;
 	padding-bottom: 3em;
 	background: #CE2026;
+	padding-top: 3em;
 }
 
 .parallax-right {
@@ -639,7 +641,7 @@ footer ul {
 
 	#home-h {
 		margin-bottom: 8px;
-		
+		padding-top: 0;
 	}
 
 	.heroText {
@@ -956,6 +958,7 @@ footer ul {
 		font-weight: 900;
 		font-size: 53px;
 		margin-bottom: 15px;
+		padding-top: 0;
 	}
 
 	#home-p {
@@ -1101,6 +1104,7 @@ footer ul {
 
 	#icons {
 		height: 650px;
+		padding-bottom: 80px;
 	}
 
 	.center-3 {

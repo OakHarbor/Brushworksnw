@@ -59,6 +59,8 @@ body, html {
     position: absolute;
     top: 0;
     background-color: #fff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     right: -1px;
     text-align: right;
@@ -71,8 +73,10 @@ body, html {
     height: 100%;
     position: absolute;
     top: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
-    left: 0
+    left: 0;
     margin: 0;
     width: 0;
     z-index: 6;
@@ -109,7 +113,8 @@ body, html {
     text-align: right;
     /* Added these */
     display: block;
-    box-sizing: border-box;  
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;  
 }
 
 .btn-close {
@@ -157,6 +162,8 @@ body, html {
 #side-menu {
     margin: 0;
     width: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -170,10 +177,16 @@ body, html {
 }
 
 #bottom-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     z-index: 7;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     width: 100%;
     position: absolute;
 }
@@ -283,11 +296,19 @@ body, html {
 }
 
 .gallery-rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 30px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .image img {
@@ -295,6 +316,8 @@ body, html {
     width: 400px;
     height: 400px;
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -306,6 +329,8 @@ body, html {
 .myImg {
   border-radius: 5px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -349,13 +374,20 @@ body, html {
 
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption { 
-  animation-name: zoom;
-  animation-duration: 0.3s;
+  -webkit-animation-name: zoom; 
+          animation-name: zoom;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0);transform:scale(0)} 
+  to {-webkit-transform:scale(1);transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  from {-webkit-transform:scale(0);transform:scale(0)} 
+  to {-webkit-transform:scale(1);transform:scale(1)}
 }
 
 /* The Close Button */
@@ -366,6 +398,8 @@ body, html {
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -460,10 +494,18 @@ footer ul {
     }
 
     #s-hero {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .s-header h1 {
@@ -488,9 +530,15 @@ footer ul {
     /** footer **/
 
     .footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .footer p {
@@ -562,11 +610,21 @@ footer ul {
     .navbar-links a:hover {
         background: #831517;
         color: #FFFFFF;
+        -webkit-transition: background 0.4s ease 0s;
+        -o-transition: background 0.4s ease 0s;
         transition: background 0.4s ease 0s;
+        -webkit-transition-property: background;
+        -o-transition-property: background;
         transition-property: background;
-        transition-duration: 0.4s;
-        transition-timing-function: ease;
-        transition-delay: 0s;
+        -webkit-transition-duration: 0.4s;
+             -o-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+        -webkit-transition-timing-function: ease;
+             -o-transition-timing-function: ease;
+                transition-timing-function: ease;
+        -webkit-transition-delay: 0s;
+             -o-transition-delay: 0s;
+                transition-delay: 0s;
      }
 
     .navbar-links a {
@@ -629,6 +687,8 @@ footer ul {
 
     #s-hero {
         height: 425px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -639,10 +699,19 @@ footer ul {
     }
 
     .s-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .s-header h1 {
@@ -661,9 +730,16 @@ footer ul {
     }
 
     .footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .list ul li {
