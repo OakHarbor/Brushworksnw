@@ -1,0 +1,9 @@
+# Redirect default Netlify subdomain to primary domain
+https://www.brushworksnw.netlify.app* https://www.bwnwincpainting.com/:splat 301!
+https://brushworksnw.netlify.app* https://www.bwnwincpainting.com/:splat 301!
+http://www.brushworksnw.netlify.app* https://www.bwnwincpainting.com/:splat 301!
+http://brushworksnw.netlify.app* https://www.bwnwincpainting.com/:splat 301!
+
+https://bwnwincpainting.com/* https://www.bwnwincpainting.com/:splat 301!
+http://www.bwnwincpainting.com/* https://www.bwnwincpainting.com/:splat 301!
+http://bwnwincpainting.com/* https://www.bwnwincpainting.com/:splat 301!
