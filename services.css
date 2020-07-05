@@ -246,7 +246,7 @@ body, html {
 <!-- -------------------------------------------- -*/
 
 #s-hero {
-    background:url("images/blue-brush-painting-on-fence.jpg");
+    background:url("/images/blue-brush-painting-on-fence.jpg");
     height: 450px;
     width: 100%;
     background-attachment: fixed;
