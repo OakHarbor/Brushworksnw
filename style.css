@@ -25,6 +25,10 @@ body, html {
 <!--                        NAVIGATION                                -->
 <!-- --------------------------------------------------------------- --*/
 
+.bottom-menu.clicked {
+	
+}
+
 .navbar {
 	background-color: #FFFFFF;
 	width: 100%;
